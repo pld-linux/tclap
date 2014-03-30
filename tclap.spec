@@ -2,7 +2,7 @@ Summary:	Templatized C++ Command Line Argument Parser
 Summary(pl.UTF-8):	Analizator argumentów linii poleceń oparty na szablonach C++
 Name:		tclap
 Version:	1.2.1
-Release:	1
+Release:	2
 License:	MIT
 Group:		Development/Libraries
 Source0:	http://downloads.sourceforge.net/tclap/%{name}-%{version}.tar.gz
@@ -32,6 +32,9 @@ tworzenie opisu składni i rzutowanie typów.
 Summary:	TCLAP library documentation
 Summary(pl.UTF-8):	Dokumentacja biblioteki TCLAP
 Group:		Documentation
+%if "%{_rpmversion}" >= "5"
+BuildArch:	noarch
+%endif
 
 %description apidocs
 TCLAP library documentation.
@@ -48,7 +51,6 @@ Dokumentacja biblioteki TCLAP.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
