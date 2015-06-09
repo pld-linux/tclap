@@ -2,7 +2,7 @@ Summary:	Templatized C++ Command Line Argument Parser
 Summary(pl.UTF-8):	Analizator argumentów linii poleceń oparty na szablonach C++
 Name:		tclap
 Version:	1.2.1
-Release:	2
+Release:	3
 License:	MIT
 Group:		Development/Libraries
 Source0:	http://downloads.sourceforge.net/tclap/%{name}-%{version}.tar.gz
