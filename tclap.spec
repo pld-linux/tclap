@@ -32,9 +32,7 @@ tworzenie opisu składni i rzutowanie typów.
 Summary:	TCLAP library documentation
 Summary(pl.UTF-8):	Dokumentacja biblioteki TCLAP
 Group:		Documentation
-%if "%{_rpmversion}" >= "5"
 BuildArch:	noarch
-%endif
 
 %description apidocs
 TCLAP library documentation.
