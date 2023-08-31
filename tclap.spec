@@ -5,14 +5,17 @@ Version:	1.2.5
 Release:	1
 License:	MIT
 Group:		Development/Libraries
-Source0:	http://downloads.sourceforge.net/tclap/%{name}-%{version}.tar.gz
+Source0:	https://downloads.sourceforge.net/tclap/%{name}-%{version}.tar.gz
 # Source0-md5:	346a92acf9b364dfbff0a6df03c8a59e
-URL:		http://tclap.sourceforge.net/
+URL:		https://tclap.sourceforge.net/
 BuildRequires:	doxygen
 BuildRequires:	graphviz
 BuildRequires:	libstdc++-devel
+BuildRequires:	rpm-build >= 4.6
 Requires:	libstdc++-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
+
+%define		_enable_debug_packages	0
 
 %description
 TCLAP (Templatized Command Line Argument Parser) is a simple
